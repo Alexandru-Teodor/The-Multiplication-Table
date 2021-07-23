@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>The multiplication table</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <div class = "main-page">
+        <div class = "info-timer">
+            <div class = "info_total">Total time:</div>
+            <div class = info_crt>Current time:</div>
+        </div>
+        <div class = "timer">
+            <div class = "timer_total" id = "timerTotal">00:00:00</div>
+            <div class = timer_crt id = "timerCrt">00:00:00</div>
+        </div>
+        <div class = "msg" id = "message"></div>
+        <div class = "game-area" id = "gameArea">
+            <input class = "calc" id = "no1" type="text"> *
+            <input class = "calc" id = "no2" type="text"> =
+            <input class = "result calc" id = "resultBox" type="text"> 
+            <button id = "input-btn" type = "submit" onclick = "checkResult()">Submit</button>
+        </div>
+        <button id = "restart" onclick = "restartGame()">Start</button>
+        <button id = "endGame" onclick = "endGame()">End Game</button>
+    </div>
+    <script src = "script.js"> </script>
+</body>
+</html>

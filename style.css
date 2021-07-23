@@ -1,0 +1,75 @@
+.main-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9ff60;
+    background-image: linear-gradient(315deg, #f9ff60 0%, #ffef77 74%);
+    font-size: x-large;
+}
+
+body {
+    margin: 0;
+}
+
+#endGame {
+    visibility: hidden;
+}
+
+.msg {
+    margin: 3rem 1rem 1rem 2rem !important;
+}
+
+button {
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+input {
+    border-radius: 5px;
+    font-size: large;
+}
+
+.game-area {
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #bfe299;
+    background-image: linear-gradient(315deg, #bfe299 0%, #66b5f6 74%);
+}
+
+.calc {
+    width: 2rem;
+    margin:1rem;
+}
+
+.result {
+    width: 4rem;
+}
+
+.main-page > * {
+    margin-top: 1rem;
+}
+
+.timer,
+.info-timer {
+    display: flex;
+    width:40vw;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .timer,
+    .info-timer {
+        display: flex;
+        width:70vw;
+        justify-content: space-between;
+    }
+}
